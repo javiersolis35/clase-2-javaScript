@@ -53,6 +53,7 @@ datos.forEach(dato => {
 
 // Agregar tbody a la tabla
 table.appendChild(tbody);
+table.className = 'table table-striped table-hover';
 
 // Agregar la tabla a tableContent
 tableContent.appendChild(table);
