@@ -1,9 +1,19 @@
 const aElements = document.querySelectorAll('a');
 const titleElements = document.querySelector('#title');
 const textElements = document.querySelector('#text');
-const fatherElement = document.querySelector('#card-body')
+const fatherElement = document.querySelector('#card-body');
+const createFormulario = document.querySelector('#formulario');
+console.log(formulario.innerHtml);
+
+const ocultarForm = () => {
+    formulario.style.display = 'none';
+}
+const mostrarfomulario = () =>{
+    formulario.style.display = 'block';
+}
 
 const createFormLogin = () => {
+   
     const form = document.createElement('form');
     const inputUser = document.createElement('input');
     const inputPassword = document.createElement('input');
@@ -12,11 +22,10 @@ const createFormLogin = () => {
     const divColUser = document.createElement('div');
     const divColPass = document.createElement('div');
     const divColSend = document.createElement('div');
-
-    divRow.className = 'row';
-    divColUser.className = 'col';
-    divColPass.className = 'col';
-    divColSend.className = 'col';
+        divRow.className = 'row';
+        divColUser.className = 'col';
+        divColPass.className = 'col';
+        divColSend.className = 'col';
 
     form.className = 'form';
     inputUser.placeholder = 'Usuario';
@@ -32,7 +41,7 @@ const createFormLogin = () => {
     divRow.appendChild(divColPass);
     divRow.appendChild(divColSend);
     form.appendChild(divRow);
-    fatherElement.appendChild(form);
+    formulario.appendChild(form);
 }
 
 const changeTitleAndText = (title, text) => {
@@ -47,8 +56,7 @@ aElements.forEach((aElement, index) => {
             changeTitleAndText(aElement.textContent, '');
             createFormLogin();
         } else {
-            const form = document.querySelector('form');
-            form ? form.style.display = 'none' : '';
+            ocultarForm();
             changeTitleAndText(aElement.textContent, 'Contenido del elemento ' + aElement.textContent);
         }
     })

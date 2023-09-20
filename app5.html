@@ -17,19 +17,19 @@
         <!-- // Crear un navegador con Home, Contacto, Informacion y login -->
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary border border-dark">
-            <div class="container-fluid">
+            <div class="container-fluid w-100">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav" style="position: relative;">
+                    <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">Contacto</a>
                         <a class="nav-link" href="#">Informacion</a>
-                        <button type="button" class="btn btn-primary"
-                            style="position: relative; left: 40%;">Login</button>
+                        <a class="nav-link" href="#">Login</a>
+                        
                     </div>
                 </div>
             </div>
@@ -37,35 +37,19 @@
 
         <!--  // Crear una tarjeta (Card) con header, titulo y parrafo -->
 
-        <div class="card" style="position: relative; top: 2rem; color: rgb(226, 141, 43);">
-            <div class="card-header">
-                Header
+        <div class="card mt-5 h-50 w-100 text-center"id="card-body" style="position: relative; top: 2rem; color: rgb(0, 0, 0); ">
+            <div class="card-header text-center">
+                <h4 id="title"></h4>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Título</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste obcaecati impedit
+            <div class="card-body" id="card-body" >
+                <h5 class="card-title" >Título</h5>
+                <p class="card-text" id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste obcaecati impedit
                     dignissimos velit recusandae consectetur accusamus vero quaerat, consequuntur nostrum dolorum
                     inventore, amet explicabo! Nobis tempore doloremque magnam corporis minima.</p>
             </div>
         </div>
 
-        <div id="gridContainer" style="position: relative; top: 5rem;">
-            <div class="row mt-5">
-                <div class="col-md-6 border border-info">Col 1</div>
-                <div class="col-md-3 border border-info">Col 2</div>
-                <div class="col-md-3 border border-info">Col 3</div>
-            </div>
-
-            <div class="row">
-                <div class="col border border-info">col 1</div>
-                <div class="col border border-info">col 2</div>
-                <div class="col border border-info">col 3</div>
-                <div class="col border border-info">col 4</div>
-                
-            </div>
-
-        </div>
-
+     
 
 
     </div>
@@ -115,4 +99,23 @@
             </div>
         </div>
         <button class="btn btn-success mt-5">Enviar</button>
-    </div> -->
+    </div> --> 
+    
+    
+    
+    <!--   <div id="gridContainer" style="position: relative; top: 5rem;">
+            <div class="row mt-5">
+                <div class="col-md-6 border border-info">Col 1</div>
+                <div class="col-md-3 border border-info">Col 2</div>
+                <div class="col-md-3 border border-info">Col 3</div>
+            </div>
+
+            <div class="row">
+                <div class="col border border-info">col 1</div>
+                <div class="col border border-info">col 2</div>
+                <div class="col border border-info">col 3</div>
+                <div class="col border border-info">col 4</div>
+                
+            </div>
+
+        </div> -->
